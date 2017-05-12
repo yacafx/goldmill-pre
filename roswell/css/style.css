@@ -62,7 +62,7 @@ a, a:hover, a:active {
     background: #FFF; }
     .header_CW .logo {
       text-align: center;
-      padding: 28px 0 0 0; }
+      padding: 20px 0 10px 0; }
       .header_CW .logo a.desktop {
         display: block;
         margin: 0 auto;
