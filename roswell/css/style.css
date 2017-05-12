@@ -1,0 +1,999 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+img {
+  max-width: 100%; }
+
+.redColor {
+  color: #D9272E; }
+
+a, a:hover, a:active {
+  color: inherit; }
+
+@media all {
+  body {
+    margin: 0;
+    padding: 0 0 0 0;
+    font-family: "Open Sans", "Century Gothic", Arial, Helvetica, sans-serif;
+    background: url("../img/bg_site.png") center center repeat; }
+
+  .reservar_btn a {
+    background: #646562;
+    border-radius: 7px;
+    display: inline-block;
+    width: 139px;
+    padding: 8px 0;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px; }
+  .reservar_btn a.active,
+  .reservar_btn a:hover {
+    background: #D9272E;
+    color: #FFF; }
+
+  .btn_general {
+    background: #646562;
+    border-radius: 7px;
+    border: 0;
+    display: inline-block;
+    width: 139px;
+    padding: 8px 0;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px; }
+
+  .btn_general.disabled {
+    background: #ECECEC;
+    color: #646562; }
+
+  .btn_general:hover {
+    background: #D9272E;
+    color: #FFF; }
+
+  /*******************/
+  /* estilos header */
+  .header_CW {
+    border-top: 20px solid #000;
+    border-bottom: 15px solid #646562;
+    width: 100%;
+    background: #FFF; }
+    .header_CW .logo {
+      text-align: center;
+      padding: 28px 0 0 0; }
+      .header_CW .logo a.desktop {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 84px;
+        background: url("../img/CentralWorkout_log.png") center center no-repeat;
+        background-size: 100%; }
+      .header_CW .logo a.mobile {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 20px;
+        background: url("../img/CentralWorkout_slogan.png") center center no-repeat;
+        background-size: 100%; }
+    .header_CW .login {
+      text-align: right;
+      padding: 15px 0; }
+      .header_CW .login .notification {
+        background: url("../img/icon_redBell.png") center center no-repeat;
+        display: inline-table;
+        padding: 12px 11px;
+        margin-right: 15px; }
+    .header_CW .iconLog {
+      display: inline-table;
+      height: 50px;
+      background: url("../img/user_log.png") center right no-repeat;
+      margin: 0 0 0 auto;
+      padding: 15px 57px 10px 0;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #646562;
+      font-weight: bold;
+      font-size: 11px; }
+    .header_CW .menu img {
+      border-radius: 100px; }
+    .header_CW .menu a {
+      padding: 0 6px 36px 6px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #646562;
+      font-weight: bold;
+      font-size: 11px; }
+
+  .mobile_menu .icon {
+    background-image: url("../img/icon_mobile-menu.png");
+    background-position: top center;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 56px;
+    margin: 24px auto 0 auto; }
+  .mobile_menu .items {
+    background: rgba(0, 0, 0, 0.75);
+    padding: 0 10px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    z-index: 100; }
+    .mobile_menu .items a {
+      color: #FFF;
+      text-transform: uppercase;
+      font-size: 14px;
+      padding: 3px 0;
+      display: block;
+      text-decoration: none; }
+
+  .user_menu {
+    background: rgba(0, 0, 0, 0.75);
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    width: 130px;
+    max-width: 275px;
+    padding: 7px;
+    position: absolute;
+    right: -10%;
+    top: 80px;
+    z-index: 100;
+    text-align: left;
+    font-size: 11px; }
+    .user_menu p {
+      margin: 0;
+      padding: 5px 0; }
+    .user_menu a {
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 13px; }
+    .user_menu a.txt_cerrar {
+      color: #D9272E; }
+
+  /*******************/
+  /* Login, nuevo perfil, editar perfil */
+  .login_modal {
+    background: #454545;
+    box-shadow: 0 0px 3px 0 rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    width: 80%;
+    padding: 0 7px 10px 7px;
+    position: absolute;
+    right: 10%;
+    top: 80px;
+    z-index: 100;
+    text-align: center;
+    font-size: 11px; }
+    .login_modal a {
+      text-decoration: underline; }
+    .login_modal p {
+      margin: 5px 0;
+      padding: 0; }
+    .login_modal table {
+      margin: 0 auto; }
+    .login_modal .titulo {
+      text-transform: uppercase;
+      font-size: 16px; }
+    .login_modal .input_login {
+      border: 0;
+      border-radius: 3px;
+      padding: 7px;
+      background: #646562;
+      color: #FFF;
+      font-size: 14px;
+      text-align: center;
+      width: 80%; }
+    .login_modal .input_login.ng-invalid.ng-touched {
+      background-color: pink; }
+    .login_modal .input_login.ng-valid {
+      background-color: #646562; }
+    .login_modal .btn_login {
+      font-size: 16px;
+      border-radius: 3px;
+      border: 0;
+      text-transform: uppercase;
+      padding: 7px;
+      width: 80%; }
+    .login_modal .btn_login:disabled {
+      background: #ECECEC;
+      color: #646562; }
+    .login_modal .btn_login:enabled {
+      background: #D9272E;
+      color: #FFF; }
+    .login_modal label {
+      margin: 0;
+      padding: 0;
+      color: #D9272E; }
+    .login_modal ::-webkit-input-placeholder {
+      /* Chrome/Opera/Safari */
+      color: #9B9B9B;
+      font-size: 14px; }
+    .login_modal ::-moz-placeholder {
+      /* Firefox 19+ */
+      color: #9B9B9B;
+      font-size: 14px; }
+    .login_modal :-ms-input-placeholder {
+      /* IE 10+ */
+      color: #9B9B9B;
+      font-size: 14px; }
+    .login_modal :-moz-placeholder {
+      /* Firefox 18- */
+      color: #9B9B9B;
+      font-size: 14px; }
+
+  /*******************/
+  /* slider */
+  .home_slider .slides {
+    width: 100%;
+    height: 200px; }
+  .home_slider .slide1 {
+    background: url("../img/home_slider/slider1.png") right bottom no-repeat;
+    background-size: 100%; }
+
+  /********************/
+  /* botones homepage */
+  .home_btns {
+    margin: 0 auto;
+    padding-bottom: 30px; }
+    .home_btns .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+    .home_btns a {
+      display: inline-block;
+      margin: 30px auto 0 auto;
+      background-color: #D9272E;
+      background-position: 20px center;
+      background-repeat: no-repeat;
+      color: #FFF;
+      padding: 25px 20px 25px 60px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      text-decoration: none;
+      width: 230px;
+      text-align: center; }
+    .home_btns a:active {
+      color: #FFF; }
+    .home_btns a:hover {
+      color: #FFF; }
+    .home_btns a.comprar {
+      background-image: url("../img/icon_tdc.png"); }
+    .home_btns a.reservar {
+      background-image: url("../img/icon_clock.png"); }
+
+  /*******************/
+  /* socialmedia */
+  .socialmedia {
+    padding: 50px 0;
+    text-align: center;
+    width: 100%; }
+    .socialmedia table {
+      margin: 0 auto; }
+
+  .social-item {
+    width: 45px;
+    height: 45px;
+    margin: 5px auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    display: block; }
+
+  .facebook {
+    background-image: url(../img/icon_facebook.png); }
+
+  .twitter {
+    background-image: url(../img/icon_twitter.png); }
+
+  .linked {
+    background-image: url(../img/icon_linked.png); }
+
+  .instagram {
+    background-image: url(../img/icon_instagram.png); }
+
+  /******************/
+  /* footer */
+  .footer {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-bottom: 20px solid #000;
+    padding: 30px 0; }
+    .footer .row {
+      width: 100%;
+      max-width: 100%;
+      margin: 0; }
+    .footer a {
+      text-decoration: none;
+      color: inherit; }
+
+  /**********************************/
+  /* imagenes como fondo - paquetes & clases */
+  .thumb {
+    width: 100%;
+    max-width: 133px;
+    height: 121px;
+    border-radius: 10px;
+    margin: 10px auto 20px auto;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat; }
+
+  .thumb_pub,
+  .thumb_clase,
+  .thumb_instructor,
+  .thumb_articulo,
+  .thumb_gpo {
+    width: 100%;
+    max-width: 124px;
+    height: 124px;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto 10px auto;
+    border-radius: 7px; }
+
+  .thumb_reservar {
+    width: 100%;
+    max-width: 124px;
+    height: 124px;
+    border-radius: 10px;
+    display: block;
+    background-position: center center;
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+    margin: 10px auto 20px auto; }
+
+  .thumb_pub {
+    border: 10px solid #ECECEC;
+    box-sizing: content-box; }
+
+  .comprar_forma-pago .active .thumb {
+    border: 10px solid #ECECEC;
+    box-sizing: content-box;
+    margin: 0 auto 10px auto; }
+    .comprar_forma-pago .active .thumb a {
+      background: #D9272E; }
+
+  .comprar_paquete .active .thumb {
+    border: 10px solid #FFF;
+    box-sizing: content-box;
+    margin: 0 auto 10px auto; }
+
+  .comprar_paquete .active a,
+  .comprar_forma-pago .active a {
+    background: #D9272E; }
+
+  .clases_btns .active .thumb_reservar {
+    border: 10px solid #ECECEC;
+    box-sizing: content-box;
+    margin: 0 auto 10px auto; }
+
+  /* imagenes de los botones reservar y mi agenda */
+  .img_reservar {
+    background-image: url("../img/reservar.jpg"); }
+
+  .img_agenda {
+    background-image: url("../img/agenda.jpg"); }
+
+  .img_gpo1 {
+    background-image: url("../img/thumb_gpo1.png"); }
+
+  .img_gpo2 {
+    background-image: url("../img/thumb_gpo2.png"); }
+
+  .img_gpo3 {
+    background-image: url("../img/thumb_gpo3.png"); }
+
+  /* imagenes de los paquetes */
+  .paq-1 { background-image: url("../img/thumb_paq/1clase.png"); }
+  .paq-10 { background-image: url("../img/thumb_paq/10clases.png"); }
+  .paq-25 { background-image: url("../img/thumb_paq/25clases.png");}    
+  .paq-mes { background-image: url("../img/thumb_paq/mensual.png"); }
+  .paq-anual { background-image: url("../img/thumb_paq/anual.png"); }
+
+  /* imagenes de las clases */
+  .clase_fuerza {
+    background-image: url("../img/thumb_clases/clase1.jpg"); }
+
+  .clase_hiit {
+    background-image: url("../img/thumb_clases/clase2.jpg"); }
+
+  .clase_perform {
+    background-image: url("../img/thumb_clases/clase3.jpg"); }
+
+  /* imagenes de los instructores */
+  .img_instructor1 {
+    background-image: url("../img/thumb_instructor/instructor1.jpg"); }
+
+  .img_instructor2 {
+    background-image: url("../img/thumb_instructor/instructor1.jpg"); }
+
+  .img_instructor3 {
+    background-image: url("../img/thumb_instructor/instructor1.jpg"); }
+
+  .img_instructor4 {
+    background-image: url("../img/thumb_instructor/instructor1.jpg"); }
+
+  /* imagenes de las secciones */
+  .img_reservar {
+    background-image: url("../img/reservar.jpg"); }
+
+  .img_agenda {
+    background-image: url("../img/agenda.jpg"); }
+
+  .img_medios {
+    background-image: url("../img/medios.jpg"); }
+
+  .img_articulo {
+    background-image: url("../img/thumb_articulos/articulo1.jpg"); }
+
+  /************************/
+  /* titulo publicaciones */
+  .publicacion_titulo {
+    background: #FFF; }
+    .publicacion_titulo .titulo {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-align: center;
+      color: #646562;
+      background: #FFF; }
+    .publicacion_titulo .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 20px; }
+    .publicacion_titulo .selected {
+      background: url("../img/bg_btns_clases.png") bottom center no-repeat;
+      width: 133px;
+      height: 145px;
+      margin: -145px auto 0 auto;
+      position: relative;
+      top: 145px;
+      z-index: 1000; }
+
+  /*****************/
+  /* publicaciones */
+  .publicaciones {
+    padding: 20px 30px; }
+    .publicaciones .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+
+  .pub_thumbs {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 30px 10px 10px 10px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px; }
+
+  .pub_contenido {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding: 30px;
+    text-align: justify;
+    color: #FFF;
+    font-size: 13px; }
+
+  .pub_titulo {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0; }
+
+  .pub_subtitulo {
+    font-size: 15px;
+    text-transform: uppercase; }
+
+  /********************************/
+  /* contador de clases restantes */
+  .contador_clases {
+    background: #FFF;
+    /*
+    position: relative;
+    top: 0px;
+    margin-top: 0;*/ }
+    .contador_clases .skew_bg {
+      transform: skew(35deg, 0deg);
+      background: #646562;
+      color: #FFF;
+      width: 75px;
+      padding: 10px 15px 10px 25px;
+      text-align: center;
+      margin: 0 auto; }
+    .contador_clases .skew_txt {
+      transform: skew(-35deg, 0deg); }
+      .contador_clases .skew_txt .num_clases {
+        font-size: 24px;
+        margin-right: 8px;
+        font-weight: bold; }
+      .contador_clases .skew_txt .txt_clases {
+        font-size: 12px;
+        margin-left: 5px; }
+
+  .contador_clases.alerta .skew_bg {
+    background: #D9272E; }
+
+  /*******************************************/
+  /* botones de clases: reservar y mi agenda */
+  .clases_btns {
+    background: #FFF;
+    color: #9B9B9B;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 25px 15px; }
+    .clases_btns .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+    .clases_btns .active .selected {
+      background: url("../img/bg_btns_clases.png") bottom center no-repeat;
+      width: 144px;
+      height: 147px;
+      /* float: left; */
+      margin: -147px auto 0 auto;
+      position: relative;
+      top: 158px;
+      z-index: 1000; }
+    .clases_btns .active img {
+      margin: 0 0 10px 0;
+      border: 10px solid #D8D8D8; }
+    .clases_btns a {
+      color: inherit;
+      text-decoration: none; }
+
+  /*****************************/
+  /* reservar clases por grupo */
+  .clases_gpo {
+    background: #ECECEC;
+    padding: 30px 15px;
+    text-align: center; }
+    .clases_gpo .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+    .clases_gpo .title {
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #646562;
+      margin-bottom: 20px; }
+    .clases_gpo .opcion {
+      margin: 10px 0; }
+    .clases_gpo img {
+      margin-bottom: 10px; }
+    .clases_gpo a {
+      font-size: 14px; }
+
+  .clase_calendario {
+    padding-top: 50px; }
+    .clase_calendario .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+    .clase_calendario table.detalle {
+      margin: 0 auto 20px auto;
+      width: 90%;
+      float: left; }
+      .clase_calendario table.detalle thead {
+        text-align: center; }
+      .clase_calendario table.detalle .day {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        display: block; }
+      .clase_calendario table.detalle .date {
+        font-size: 12px;
+        text-transform: uppercase;
+        display: block; }
+    .clase_calendario .dias:before,
+    .clase_calendario .dias:after {
+      color: #D9272E;
+      font-size: 20px;
+      cursor: pointer;
+      float: left;
+      width: 5%; }
+    .clase_calendario .dias:before {
+      content: "<";
+      text-align: left; }
+    .clase_calendario .dias:after {
+      content: ">";
+      text-align: right; }
+    .clase_calendario table.detalle_horas tr {
+      border-bottom: 1px solid #646562; }
+    .clase_calendario table.detalle_horas td {
+      padding: 7px 0;
+      text-align: center;
+      font-size: 11px; }
+    .clase_calendario table.detalle_horas .active {
+      background: #646562;
+      color: #FFF; }
+
+  .clases_detalle {
+    padding-top: 25px;
+    font-size: 12px; }
+    .clases_detalle .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+
+  /***************************************/
+  /* comprar por paquete, texto de título */
+  .comprar_titulo {
+    background: #FFF;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #9B9B9B; }
+    .comprar_titulo .row {
+      width: 100%;
+      max-width: 450px;
+      margin: 0 auto; }
+    .comprar_titulo .titulo {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-align: center;
+      color: #646562;
+      padding: 5px 0; }
+
+  /*******************/
+  /* grupo de clases */
+  .comprar_paquete {
+    background: #ECECEC;
+    padding: 30px 0;
+    text-align: center; }
+    .comprar_paquete .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+    .comprar_paquete .title {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      color: #646562;
+      margin-bottom: 20px; }
+    .comprar_paquete .opcion {
+      margin: 10px 0; }
+
+  .paquete_seleccionado {
+    padding: 30px 0 0 0;
+    font-size: 14px;
+    background: #FFF; }
+    .paquete_seleccionado .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      border-bottom: 1px solid #ECECEC; }
+    .paquete_seleccionado .title {
+      font-weight: bold; }
+    .paquete_seleccionado .price {
+      font-weight: bold; }
+
+  /******************************/
+  /* comprar por forma de pago */
+  .comprar_forma-pago {
+    background: #FFF;
+    padding: 30px 0;
+    text-align: center; }
+    .comprar_forma-pago .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+    .comprar_forma-pago .title {
+      text-transform: uppercase;
+      font-size: 20px;
+      font-weight: bold;
+      color: #646562;
+      margin-bottom: 20px; }
+    .comprar_forma-pago .opcion {
+      margin: 10px 0; }
+    .comprar_forma-pago img {
+      margin: 10px;
+      border-radius: 10px; }
+    .comprar_forma-pago .active img {
+      border: 10px solid #ECECEC;
+      margin: 0; }
+    .comprar_forma-pago .active a {
+      background: #D9272E; }
+
+  .formato_seleccionado {
+    padding: 30px 0 0 0;
+    font-size: 14px;
+    background: #FFF; }
+    .formato_seleccionado .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      border-bottom: 1px solid #ECECEC; }
+    .formato_seleccionado .title {
+      font-weight: bold; }
+    .formato_seleccionado .price {
+      font-weight: bold; }
+
+  /****************/
+  /* Instructores */
+  .general_txt {
+    background: #FFF; }
+    .general_txt .titulo {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-align: center;
+      color: #646562;
+      background: #FFF; }
+    .general_txt .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto;
+      padding: 20px; }
+
+  .instructor_detalle {
+    color: #646562;
+    margin-bottom: 30px; }
+    .instructor_detalle p {
+      margin: 0 0 5px 0 !important; }
+    .instructor_detalle .row {
+      width: 100%;
+      max-width: 650px;
+      margin: 0 auto; }
+    .instructor_detalle .nombre {
+      font-weight: bold; }
+
+  /********************/
+  /* seccion contacto */
+  .contacto_txt {
+    background: #FFF; }
+    .contacto_txt .titulo {
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-align: center;
+      color: #646562;
+      background: #FFF; }
+    .contacto_txt .row {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 20px; }
+
+  .contacto {
+    color: #646562; }
+    .contacto .row {
+      width: 100%;
+      max-width: 700px;
+      margin: 0 auto; }
+    .contacto .contactForm {
+      padding: 20px; }
+    .contacto .contactInfo {
+      padding: 20px;
+      border-bottom: 1px solid #646562; }
+      .contacto .contactInfo .telefono {
+        font-size: 22px;
+        font-weight: bold; }
+    .contacto .reservar_btn {
+      text-align: right; }
+    .contacto table {
+      width: 100%;
+      margin: 0 auto; }
+      .contacto table td {
+        padding: 5px; }
+    .contacto label {
+      text-align: center;
+      display: block;
+      color: #D9272E; }
+
+  .input_cwo {
+    background: #ECECEC;
+    padding: 5px 7px;
+    border: 0;
+    width: 100%;
+    color: #646562; }
+
+  .input_cwo.ng-invalid.ng-touched {
+    background-color: pink; }
+
+  .input_cwo.ng-valid {
+    background-color: #ECECEC; }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #9B9B9B; }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #9B9B9B; }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #9B9B9B; }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #9B9B9B; }
+
+  /********************/
+  /* notificacion de compra */
+  .notificacion_compra {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.75);
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    max-width: 300px;
+    height: 275px;
+    text-align: center; }
+    .notificacion_compra .cerrar {
+      display: block;
+      text-align: right;
+      color: #ECECEC;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 10px 15px; }
+      .notificacion_compra .cerrar a {
+        color: inherit !important;
+        text-decoration: none; }
+    .notificacion_compra .text {
+      font-size: 20px;
+      color: #FFF;
+      padding: 30px 15px; }
+
+  /****************************/
+  /* notificaciones generales */
+  .notificacion_gral {
+    background: #454545;
+    box-shadow: 0 0px 5px 2px rgba(0, 0, 0, 0.5);
+    color: #FFF;
+    width: 90%;
+    max-width: 350px;
+    padding: 0 7px 10px 7px;
+    position: absolute;
+    right: 5%;
+    top: 100px;
+    z-index: 100; }
+    .notificacion_gral p {
+      margin: 0;
+      padding: 0;
+      display: inline-table; }
+    .notificacion_gral .cerrar {
+      width: 10%;
+      padding: 7px;
+      text-align: right; }
+      .notificacion_gral .cerrar a {
+        color: #FFF;
+        font-size: 14px;
+        text-decoration: none; }
+      .notificacion_gral .cerrar a:hover {
+        color: #D9272E; }
+    .notificacion_gral .text {
+      border-bottom: 1px solid #FFF; }
+    .notificacion_gral .text,
+    .notificacion_gral .comprar {
+      width: 89%;
+      font-size: 11px;
+      color: #FFF;
+      padding: 10px 0;
+      margin-bottom: 3px;
+      text-align: left; }
+    .notificacion_gral .reservar_btn {
+      width: 89%;
+      text-align: right; } }
+@media (min-width: 768px) {
+  body {
+    background-position: center left; }
+
+  .main_content {
+    background: url("../img/bg_content.png") no-repeat right 270px; }
+
+  /*******************/
+  /* estilos header */
+  .header_CW {
+    background: #FFF; }
+    .header_CW .container {
+      max-width: 1000px; }
+    .header_CW .logo {
+      padding: 15px 0; }
+    .header_CW .menu {
+      padding-top: 60px;
+      text-align: center; }
+    .header_CW .login {
+      padding: 47px 0 5px 0; }
+    .header_CW a {
+      font-size: 11px;
+      color: inherit; }
+    .header_CW .selected {
+      background: url("../img/bg_triangle.png") 50% bottom no-repeat; }
+    .header_CW a.selected {
+      color: #D9272E; }
+
+  .mobile_menu {
+    display: none; }
+
+  /*******************/
+  /* slider homepage */
+  .home_slider .slides {
+    height: 400px;
+    background-size: 100%; }
+
+  /***********/
+  /* Footer */
+  .footer .row {
+    max-width: 1000px;
+    margin: 0 auto; }
+
+  /****************/
+  /* pubicaciones */
+  .publicaciones {
+    padding: 30px 0; }
+
+  .pub_thumbs {
+    margin-left: 20px;
+    margin-top: 0; }
+
+  /*******************/
+  /* grupo de clases */
+  .clases_gpo .opcion {
+    margin: 0; }
+
+  .clases_btns {
+    margin-top: -74px; }
+
+  /********************/
+  /* comprar clases por paquetes */
+  .comprar_titulo .titulo {
+    display: none; }
+
+  .comprar_paquete {
+    padding: 30px 15px; }
+    .comprar_paquete .opcion {
+      margin: 0; }
+
+  /* Instructores */
+  .general_txt {
+    background: none; }
+    .general_txt .titulo {
+      display: none;
+      background: none; }
+
+  .contacto_txt {
+    background: transparent; }
+    .contacto_txt .titulo {
+      display: none; }
+
+  .contacto .contactInfo {
+    border-bottom: 0;
+    border-left: 1px solid #646562; }
+
+  .notificacion_gral {
+    right: 0;
+    top: 134px; }
+
+  .notificacion_compra {
+    top: 30%;
+    left: 35%; }
+
+  .login_modal {
+    top: 134px;
+    right: 1%;
+    width: 275px; }
+
+  .user_menu {
+    top: 115px;
+    text-align: center;
+    width: 275px; }
+    .user_menu a {
+      font-size: 13px; }
+    .user_menu p {
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid #FFF; }
+    .user_menu p:last-child {
+      border: 0; } }
+
+/*# sourceMappingURL=style.css.map */
