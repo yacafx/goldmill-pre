@@ -328,7 +328,9 @@ a, a:hover, a:active {
     font-weight: bold;
     text-transform: uppercase;
     color: #FFF;
-    background: #000 url('../img/bg_site_black.png') top left repeat;
+    background-image: url('../img/bg_site_black.png'), url('../img/bg_txt2.png');
+    background-position: top left, bottom right;
+    background-repeat: repeat, no-repeat;
   }
 
   .texto .row {
