@@ -928,10 +928,11 @@ a, a:hover, a:active {
       text-align: right; } }
 @media (min-width: 768px) {
   body {
-    background-position: center left; }
+    background: url("../img/bg_content.png") center 430px no-repeat, url("../img/bg_site.png") center center repeat;
+    
 
-  .main_content {
-    background: url("../img/bg_content.png") no-repeat right 270px; }
+  /*.main_content {
+    background: url("../img/bg_content.png") no-repeat right 270px; }*/
 
   /*******************/
   /* estilos header */
